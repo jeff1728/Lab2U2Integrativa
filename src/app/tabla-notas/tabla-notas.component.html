@@ -1,0 +1,13 @@
+<table>
+    <tr>
+      <th>Nombre</th>
+      <th>Calificaciones</th>
+    </tr>
+    <tr *ngFor="let student of students">
+      <td>{{ student.name }}</td>
+      <td>{{ student.grades.join(', ') }}</td>
+    </tr>
+  </table>
+  
+  <button (click)="updateStudent()">Actualizar Promedio</button>
+  

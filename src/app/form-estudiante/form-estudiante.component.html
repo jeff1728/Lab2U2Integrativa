@@ -1,0 +1,11 @@
+<div class="form-container">
+    <h2>Agregar Estudiante</h2>
+    
+    <label for="name">Nombre del Estudiante:</label>
+    <input type="text" id="name" [(ngModel)]="studentName" placeholder="Nombre" />
+
+    <label for="grades">Calificaciones (separadas por coma):</label>
+    <input type="text" id="grades" [(ngModel)]="studentGrades" placeholder="Ej. 90, 80, 75" />
+
+    <button (click)="addStudent()">Agregar Estudiante</button>
+</div>
